@@ -24,6 +24,7 @@ const getBrands = async () => {
 
 const product = async () => {
   const [products, brands] = await Promise.all([getProducts(), getBrands()]);
+  console.log(products);
 
   return (
     <div>
