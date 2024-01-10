@@ -27,7 +27,7 @@ const UpdateProduct = ({
 
   const handleUpdate = async (e: SyntheticEvent) => {
     e.preventDefault();
-    await axios.patch(`api/products/${product.id}`, {
+    await axios.patch(`/api/products/${product.id}`, {
       title: title,
       price: Number(price),
       brandId: Number(brand),

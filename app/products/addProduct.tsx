@@ -14,7 +14,7 @@ const AddProduct = ({ brands }: { brands: Brand[] }) => {
 
   const handleSubmit = async (e: SyntheticEvent) => {
     e.preventDefault();
-    await axios.post("api/products", {
+    await axios.post("/api/products", {
       title: title,
       price: Number(price),
       brandId: Number(brand),
