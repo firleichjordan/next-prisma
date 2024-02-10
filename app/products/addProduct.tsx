@@ -37,7 +37,7 @@ const AddProduct = ({ brands }: { brands: Brand[] }) => {
       </button>
       <div className={isOpen ? "modal modal-open" : "modal"}>
         <div className="modal-box">
-          <h3 className="font-bold text-lg">Add Product</h3>
+          <h3 className="font-bold text-lg">Add New Product</h3>
           <form onSubmit={handleSubmit}>
             <div className="form-control w-full">
               <label className="label font-bold">Product Name</label>
